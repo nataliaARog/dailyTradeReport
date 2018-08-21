@@ -1,6 +1,6 @@
 package util;
 
-public enum Currency {
+public enum Currency { 
 	
 	AED("AED"), AFN("AFN"), ALL("ALL"), AMD("AMD"), ANG("ANG"), AOA("AOA"), ARS("ARS"), AUD("AUD"), AWG("AWG"), 
 	AZN("AZN"), BAM("BAM"), BBD("BBD"), BDT("BDT"), BGN("BGN"), BHD("BHD"), BIF("BIF"), BMD("BMD"), BND("BND"), 

@@ -5,5 +5,5 @@ import java.math.BigDecimal;
 @FunctionalInterface
 public interface Operation {
 
-	public BigDecimal calculateTradeAmount(BigDecimal value);
+	public BigDecimal calculateTradeAmount(BigDecimal pricePerUnit,int units,BigDecimal agreedFx);
 }

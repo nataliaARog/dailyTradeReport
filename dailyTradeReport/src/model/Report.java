@@ -9,18 +9,11 @@ public class Report implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private int rank;	
 	private String entity;	
 	private String incoming;	
 	private String outgoing;
-
-	public int getRank() {
-		return rank;
-	}
-
-	public void setRank(int rank) {
-		this.rank = rank;
-	}
+	private String instructionDate;
+	private String settlementDate;
 
 	public String getEntity() {
 		return entity;
@@ -31,6 +24,9 @@ public class Report implements Serializable {
 	}
 
 	public String getIncoming() {
+		if(this.incoming == null) {
+			incoming = "0";
+		}
 		return incoming;
 	}
 
@@ -39,6 +35,9 @@ public class Report implements Serializable {
 	}
 
 	public String getOutgoing() {
+		if(this.outgoing == null) {
+			outgoing = "0";
+		}
 		return outgoing;
 	}
 
@@ -46,4 +45,19 @@ public class Report implements Serializable {
 		this.outgoing = outgoing;
 	}
 
+	public String getInstructionDate() {
+		return instructionDate;
+	}
+
+	public void setInstructionDate(String instructionDate) {
+		this.instructionDate = instructionDate;
+	}
+
+	public String getSettlementDate() {
+		return settlementDate;
+	}
+
+	public void setSettlementDate(String settlementDate) {
+		this.settlementDate = settlementDate;
+	}
 }
